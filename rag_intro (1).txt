@@ -1,0 +1,15 @@
+Retrieval-Augmented Generation, also known as RAG, is an AI technique that combines information retrieval with text generation.
+
+In a RAG system, documents are first divided into smaller text chunks. Each chunk is converted into a numerical vector called an embedding.
+
+These embeddings are stored inside a vector database such as Qdrant. A vector database can search for similar meanings, not only exact words.
+
+When a user asks a question, the question is also converted into an embedding. The system searches the vector database to retrieve the most relevant chunks.
+
+The retrieved chunks are then sent to a language model as context. The language model uses this context to generate a more accurate answer.
+
+RAG helps reduce hallucination because the model is guided by retrieved information from trusted documents.
+
+Ollama is a tool that allows developers to run large language models locally on their machines.
+
+Qdrant is a vector database used to store embeddings and perform semantic search.
